@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form onsubmit="return false">
-        <label >SGt</label>
-        <input title="SGT" id="SGT" type="number" />
-        
+    <h2>This is the equation of 
+    </h2>
+    <br>
+    <h3>SGT60 = -1*(3.31e-4 * (T(F) - 60))/SGT</h3>
+    <form onsubmit="return false" id="form">
+        <label >SGT</label>
+        <br>
+        <input title="SGT" id="SGT" type="text" />
+        <br>
         <label >Tempreture In F</label>
-        <input id="temp" title="Tempreture" type="number" />
-        <button onclick=calcTempAtSixty() type="submit" id = "thisIsButton">zbele</button>
+        <br>
+        <input id="temp" title="Tempreture" type="text" />
+        <br>
+        <button onclick=calcTempAtSixty() type="submit" id = "thisIsButton">Calculate</button>
     </form>
-    <p id = "answer">hi</p>
+    <h4 id = "answer"></h4>
     <script src="script.js"></script>
     
 </body>
